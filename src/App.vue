@@ -49,7 +49,7 @@ import { getVisualization } from './apis/visualization.js';
 const data = ref(null)
 const loadData = async () => {
   data.value = await getVisualization()
-  console.log(data.value);
+  // console.log(data.value);
 }
 onMounted(() => {
   loadData()
