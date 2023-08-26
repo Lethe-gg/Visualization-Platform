@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <div>[大区数据信息]</div> -->
+    <div class=" text-center">[大区数据信息]</div>
     <div ref="target" class=" w-full h-full"></div>
   </div>
 </template>
@@ -53,7 +53,7 @@ const renderChart = () => {
     },
     series: [
       {
-        name: '[大区数据信息]',
+        name: "sale",
         type: 'bar',
         colorBy: 'data',
         data: props.data.regions.map(item => ({
@@ -73,7 +73,7 @@ const renderChart = () => {
         barWidth: 12,
         label: {
           show: true,
-          postion: 'right',
+          position: 'right',
           color: '#fff'
         }
       }]

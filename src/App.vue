@@ -6,7 +6,7 @@
       <!-- 横向柱状图 -->
       <HorizontalBar class=" h-1/3 box-border pb-4" :data="data.regionData" />
       <!-- 雷达图 -->
-      <RadarBar class=" h-1/3 box-border pb-4" />
+      <RadarBar class=" h-1/3 box-border pb-4" :data="data.riskData" />
       <!-- 关系图 -->
       <Relation />
     </div>
@@ -24,9 +24,9 @@
     <!-- 右 -->
     <div class=" flex-1 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
       <!-- 竖向柱状图 -->
-      <VerticalBar class=" h-1/3 box-border pb-4" />
+      <VerticalBar class=" h-1/3 box-border pb-4" :data="data.serverData" />
       <!-- 环形图 -->
-      <RingBar class=" h-1/3 box-border pb-4" />
+      <RingBar class=" h-1/3 box-border pb-4" :data="data.abnormalData" />
       <!-- 文档云图 -->
       <WordCloud />
     </div>
