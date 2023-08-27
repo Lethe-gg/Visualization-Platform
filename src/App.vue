@@ -8,7 +8,7 @@
       <!-- 雷达图 -->
       <RadarBar class=" h-1/3 box-border pb-4" :data="data.riskData" />
       <!-- 关系图 -->
-      <Relation />
+      <Relation class=" h-1/3" :data="data.relationData" />
     </div>
 
 
@@ -28,7 +28,7 @@
       <!-- 环形图 -->
       <RingBar class=" h-1/3 box-border pb-4" :data="data.abnormalData" />
       <!-- 文档云图 -->
-      <WordCloud />
+      <WordCloud class=" h-1/3" :data="data.wordCloudData" />
     </div>
   </div>
 </template>
