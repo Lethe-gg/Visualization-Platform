@@ -17,7 +17,7 @@
       <!-- 数据总览 -->
       <TotalData class=" bg-opacity-50 bg-slate-800 p-3" :data="data.totalData" />
       <!-- 地图可视化 -->
-      <MapChart class=" bg-opacity-50 bg-slate-800 p-3 mt-4 flex-1" />
+      <MapChart class=" bg-opacity-50 bg-slate-800 p-3 mt-4 flex-1" :data="data.mapData" />
     </div>
 
 
